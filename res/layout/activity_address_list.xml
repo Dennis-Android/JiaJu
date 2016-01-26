@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:id="@id/rel_tou" 
+      
+        android:layout_width="fill_parent" 
+        android:layout_height="47dip">
+        <ImageView 
+            android:id="@+id/address_list_back" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3.0dip" 
+            android:src="@drawable/back" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            android:onClick="doclick" />
+        <TextView 
+            android:textSize="16.0sp" 
+            android:gravity="center_vertical" 
+            android:id="@id/textview_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="收货地址管理" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+        
+        <Button 
+            android:textSize="16.0sp" 
+            android:id="@+id/address_list_btn_new" 
+            android:background="@null" 
+            android:layout_width="70.0dip" 
+            android:layout_height="45.0dip" 
+            android:text="新增" 
+            android:layout_alignParentRight="true" 
+            android:layout_centerVertical="true" 
+             />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@id/iv_xian" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/logo_xian" 
+        android:scaleType="fitXY" />
+    
+    
+    <ListView 
+        android:id="@+id/address_list_gridview" 
+        android:visibility="gone" 
+        android:scrollbars="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+         />
+
+             <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+                android:layout_weight="1"
+                 >
+   
+           <TextView
+               android:id="@+id/no_address"
+               android:visibility="gone"
+               android:textSize="18sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:gravity="center"
+               android:text="地址为空，请添加" />
+    
+    
+    
+    </RelativeLayout>
+</LinearLayout>

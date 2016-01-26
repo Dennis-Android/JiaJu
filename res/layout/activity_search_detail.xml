@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout         
+         android:layout_width="match_parent"
+         android:layout_height="47dp"            
+       >
+
+      <ImageButton
+          android:id="@+id/back_image_1"           
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:background="@null"
+          android:src="@drawable/back" />
+     
+       <ImageButton
+          android:id="@+id/share_image_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/share" />
+       
+        <TextView 
+            android:id="@+id/activityname_text_1"
+            android:layout_centerInParent="true"             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                         
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18sp"
+             android:text="搜索结果"
+            />
+  
+          </RelativeLayout>
+          
+        
+           <!--分割线 -->
+           <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />   
+      
+        <com.handmark.pulltorefresh.library.PullToRefreshListView  
+          xmlns:ptr="http://schemas.android.com/apk/res-auto"         
+          android:id="@+id/search_detail_pull_listview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"          
+          ptr:ptrDrawable="@drawable/arrow"
+          android:listSelector="#00000000"
+          ptr:ptrAnimationStyle="flip"                    
+          
+          />     
+           
+           
+
+
+
+
+
+
+</LinearLayout>

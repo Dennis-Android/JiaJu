@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="9dp"
+        >
+        
+        <!--用户头像-->
+        <view.CircleImageView 
+        android:id="@+id/fenlei_pull_listview_item_photo"   
+         android:gravity="center_vertical"          
+         android:layout_width="34dp"
+         android:layout_height="34dp"   
+          android:src="@drawable/tab_fifth_1"
+         />
+        
+        
+        
+        <!--用户名-->
+        <TextView 
+           android:id="@+id/fenlei_pull_listview_item_NickName"  
+            android:paddingLeft="3dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ada"
+            
+            />
+        
+        
+        
+    </LinearLayout>   
+    
+       <!--中间图片 -->
+        <ImageView 
+          android:id="@+id/fenlei_pull_listview_item_ImageUrl"  
+          android:layout_width="match_parent"
+          android:layout_height="370dp"
+          android:scaleType="fitXY"
+          
+         />
+         
+         
+        
+        
+        <!--内容  -->
+        <TextView 
+           android:id="@+id/fenlei_pull_listview_item_Content"  
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容"            
+           android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            />
+    
+         
+        
+        
+        <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        > 
+       
+         <!--赞  -->   
+         <ImageView 
+             android:id="@+id/zan"
+             android:layout_width="29dp"
+             android:layout_height="29dp"
+             android:src="@drawable/zan1"
+             android:padding="3dp"
+             android:layout_centerVertical="true"
+              
+             />   
+         <!--评论数 -->
+
+         <TextView
+             android:id="@+id/fenlei_pull_listview_item_SomePraiseCount"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="14dp"
+             android:layout_toRightOf="@+id/zan"
+             android:text="22赞asdadadas" />
+          
+          
+          
+          
+         
+         
+         
+         
+          <!--回复数 -->
+
+          <TextView
+              android:id="@+id/fenlei_pull_listview_item_ReviewCount"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="73dp"
+              android:text="16" />
+         
+         
+          <!--评论图片 -->
+          <ImageView
+              android:id="@+id/pinglun"
+              android:layout_width="wrap_content"
+              android:layout_height="20dp"
+              android:paddingRight="14dp"
+              android:layout_toLeftOf="@+id/fenlei_pull_listview_item_ReviewCount"
+              android:layout_centerVertical="true"
+              android:src="@drawable/pinglun" />
+         
+          
+          
+          <!--分享图片 -->
+          <ImageView
+              android:id="@+id/fenxiang"
+              android:layout_width="wrap_content"
+              android:layout_height="17dp"
+               android:layout_marginRight="4dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:src="@drawable/fenxiang" />
+          
+          
+          
+          
+          
+    </RelativeLayout>
+         
+         <!--分割线 -->
+        <TextView 
+         android:layout_width="match_parent"
+            android:layout_height="8dp"
+            />  
+         
+        
+        
+        
+         <!--分割线 -->
+        <TextView 
+            
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            /> 
+</LinearLayout>

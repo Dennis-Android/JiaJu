@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:background="#ffededed" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:orientation="vertical" 
+       
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content">
+         <RelativeLayout android:id="@+id/rel_top"
+              android:layout_width="fill_parent"
+               android:layout_height="50.0dip">
+            <TextView
+                 android:textSize="16sp"
+                  android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:text="现金券"
+                     android:layout_centerHorizontal="true"
+                      android:layout_centerVertical="true" />
+              <ImageView 
+                android:id="@+id/quan_back"
+                 android:background="@drawable/back"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content"
+                   android:layout_marginLeft="3.0dip" 
+                   android:layout_alignParentLeft="true" 
+                   android:layout_centerVertical="true"
+                    />
+             
+        </RelativeLayout>
+        
+         <ImageView 
+        android:id="@+id/img_xian" 
+        android:background="@drawable/logo_xian"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" />
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:layout_margin="8.0dip">
+            <CheckBox 
+                android:textSize="16.0sp" 
+                android:id="@+id/rel_quan_no" 
+                android:textColor="@drawable/juan_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" 
+                android:text="未使用" 
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_weight="1.0"
+                      />
+            <CheckBox 
+                android:textSize="16.0sp" 
+                android:id="@+id/rel_quan_yes"
+                 android:textColor="@drawable/juan_selector"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="fill_parent"
+                   android:text="已使用" 
+                    android:gravity="center"
+                    android:button="@null"
+                   android:layout_weight="1.0" 
+                     />
+            <CheckBox  
+                android:textSize="16.0sp" 
+                android:id="@+id/rel_quan_last" 
+                 android:button="@null"
+                 android:gravity="center"
+                 android:textColor="@drawable/juan_selector"
+                 android:layout_width="wrap_content" 
+                 android:layout_height="fill_parent" 
+                 android:text="已过期" 
+                 android:layout_weight="1.0" 
+                   />
+        </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+    <ImageView 
+        android:id="@+id/xian" 
+        android:background="@drawable/logo_xian"
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content" />
+     
+ 
+   
+    
+    <LinearLayout 
+        android:gravity="center"
+         android:orientation="vertical" 
+         
+         android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+        <ImageView 
+            android:id="@+id/iv_no" 
+            android:visibility="visible" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+             android:src="@drawable/img_coupon" />
+        <TextView 
+            android:id="@+id/tv_no" 
+            android:visibility="visible" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="暂无优惠卷"
+            android:layout_marginTop="10.0dip" />
+           
+  </LinearLayout>
+        
+       
+</LinearLayout>

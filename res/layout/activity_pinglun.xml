@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout 
+    android:background="#ffffffff" 
+    android:layout_width="match_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+      <RelativeLayout 
+        android:id="@+id/rel_tou" 
+        
+        android:layout_width="fill_parent" 
+        android:layout_height="50.0dip">
+        <ImageView 
+            android:id="@+id/iv_back" 
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_marginLeft="3.0dip" 
+              android:src="@drawable/back" 
+              android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true" />
+        <TextView 
+            android:textSize="18.0sp" 
+            android:gravity="center_vertical" 
+            android:id="@+id/textview_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="评论"
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/iv_xian" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_xian" 
+        android:scaleType="fitXY" 
+        android:layout_below="@id/rel_tou" />
+    
+    <ListView
+         android:id="@+id/listView_comment" 
+         android:layout_width="fill_parent" 
+         android:layout_height="match_parent" 
+         android:listSelector="@android:color/transparent" 
+         android:divider="@null" 
+         android:layout_above="@+id/ll_botm" 
+         android:scrollbars="none"
+         android:layout_below="@id/iv_xian" />
+    <!--无人评论 -->
+    <TextView 
+        android:textSize="16.0dip" 
+        android:gravity="center" 
+        android:id="@+id/pinglun_wu"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="还没有评论哦"
+        android:layout_centerInParent="true" />
+    
+    
+    <LinearLayout 
+        android:gravity="center"
+         android:orientation="horizontal" 
+         android:id="@+id/ll_botm" 
+         android:background="#ffededed"
+          android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+        
+        <!-- 评论输入 -->
+        <EditText 
+            android:id="@+id/et_comment" 
+            android:background="@drawable/shape"
+             android:padding="8.0dip" 
+             android:layout_width="wrap_content"
+              android:layout_height="wrap_content" 
+              android:layout_margin="10.0dip" 
+              android:hint="评论一下" 
+              android:layout_weight="1.0">
+            <requestFocus />
+        </EditText>
+        
+        <!--发送 -->
+        <TextView 
+          android:textSize="18.0dip"
+          android:textColor="#ff0000" 
+          android:gravity="center" 
+          android:id="@+id/tv_send"
+          android:layout_width="wrap_content" 
+          android:layout_height="fill_parent"
+          android:layout_marginRight="10.0dip"
+           android:text="发送" />
+     
+        
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+    
+    
+ 

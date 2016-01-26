@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:id="@id/rel_tou" 
+        android:layout_width="fill_parent" 
+        android:layout_height="47dip">
+        <ImageView 
+            android:id="@+id/setting_back" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3.0dip" 
+            android:src="@drawable/back" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+             />
+        <TextView 
+            android:textSize="17sp" 
+            android:gravity="center_vertical" 
+            android:id="@id/textview_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="结算" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_above="@+id/rel_button" 
+        android:layout_below="@+id/rel_tou">
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:background="@drawable/logo_xian" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" />
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:background="#ffffffff" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                <LinearLayout 
+                    android:orientation="horizontal" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip">
+                    <ImageView 
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:src="@drawable/jiesuan_1" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip" 
+                        android:text="收货地址" />
+                </LinearLayout>
+               
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip" />
+                
+                
+                <!--编辑地址-->
+                <RelativeLayout 
+                    android:id="@+id/jiesuan_select" 
+                    android:visibility="gone"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="100.0dip">
+                    <ImageView 
+                        android:id="@+id/jiesuan_img_select" 
+                        android:background="@drawable/register_select_2" 
+                        android:visibility="gone" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:button="@null" 
+                        android:layout_centerVertical="true" />
+                    <LinearLayout 
+                        android:orientation="vertical" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="fill_parent" 
+                        android:layout_marginLeft="8.0dip"
+                         android:layout_marginRight="5.0dip" 
+                         android:layout_toLeftOf="@+id/jiesuan_bianji" 
+                         android:layout_toRightOf="@id/jiesuan_img_select">
+                        
+                        <LinearLayout 
+                            android:orientation="horizontal" 
+                            android:layout_width="fill_parent"
+                             android:layout_height="wrap_content" 
+                             android:layout_marginLeft="8.0dip" 
+                             android:layout_weight="1.0">
+                            
+                            <TextView 
+                                android:textSize="16.0sp" 
+                                android:layout_gravity="center_vertical" 
+                                android:id="@+id/jiesuan_name" 
+                                android:layout_width="wrap_content"
+                               
+                                 android:layout_height="wrap_content" />
+                            <TextView 
+                                android:textSize="16.0sp" 
+                                android:layout_gravity="center_vertical"
+                                 android:id="@+id/jiesuan_phone" 
+                                 android:layout_width="wrap_content" 
+                                 android:layout_height="wrap_content" 
+                                 android:layout_marginLeft="8.0dip" />
+                        </LinearLayout>
+                        
+                        <TextView 
+                            android:textSize="16.0sp" 
+                            android:gravity="left|center" 
+                             android:id="@+id/jiesuan_address" 
+                             android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                               android:layout_marginLeft="8.0dip" 
+                               android:layout_marginRight="8.0dip" 
+                               android:layout_weight="1.0" />
+                        <TextView 
+                            android:textSize="16.0sp" 
+                             android:gravity="center"
+                             android:id="@+id/jiesuan_time" 
+                             android:visibility="gone" 
+                             android:layout_width="wrap_content" 
+                             android:layout_height="wrap_content"
+                              android:layout_marginLeft="8.0dip" 
+                              android:text="送货时间不限" 
+                              android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <Button 
+                        
+                        android:id="@id/jiesuan_bianji" 
+                        android:background="@null" 
+                        android:layout_width="45.0dip"
+                         android:layout_height="50.0dip" 
+                         android:layout_marginRight="8.0dip" 
+                         android:text="编辑" 
+                         android:drawableLeft="@drawable/jiesuan_6"
+                          android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true" 
+                           />
+                </RelativeLayout>
+                
+                <ImageView 
+                    android:background="@drawable/logo_xian"
+                     android:visibility="gone" 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="wrap_content"
+                      android:layout_marginLeft="8.0dip" 
+                      android:layout_marginRight="8.0dip" />
+                
+                
+                <!--新增地址 -->
+                <RelativeLayout 
+                    android:id="@+id/jiesuan_select_address" 
+                    android:background="@drawable/jiesuan_3"
+                     android:visibility="invisible" 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="wrap_content" 
+                     android:layout_margin="8.0dip"
+                    >
+                    <Button 
+                        android:textSize="16.0sp"
+                         android:textColor="#ffa500" 
+                         android:id="@+id/jiesuan_btn_select_address" 
+                         android:background="@null" 
+                         android:layout_width="100.0dip" 
+                         android:layout_height="wrap_content" 
+                         android:text="新增地址" 
+                         android:drawableLeft="@drawable/jiesuan_2" 
+                         android:layout_centerHorizontal="true" 
+                         android:layout_centerVertical="true" 
+                         />
+                </RelativeLayout>
+            </LinearLayout>
+            
+            <ImageView 
+                android:background="@drawable/logo_xian" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" />
+            <ImageView 
+                android:background="@drawable/logo_xian" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="8.0dip" />
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:background="#ffffffff" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                <LinearLayout 
+                    android:orientation="horizontal" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip">
+                    <ImageView 
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:src="@drawable/jiesuan_4" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:text="结算方式" />
+                </LinearLayout>
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip" />
+                <RelativeLayout 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1.0">
+                    <CheckBox 
+                        android:id="@+id/jiesuan_zhifubao_select" 
+                        android:background="@drawable/default_address_selector" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:button="@null" 
+                        android:checked="true"
+                        android:layout_centerVertical="true" 
+                         />
+                    
+                    <ImageView 
+                        android:id="@+id/zhifubao" 
+                         android:background="@drawable/jiesuan_zhifubao" 
+                        android:layout_width="35.0dip" 
+                        android:layout_height="35.0dip" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:button="@null" 
+                        android:layout_toRightOf="@id/jiesuan_zhifubao_select" 
+                        android:layout_centerVertical="true" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:text="支付宝" 
+                        android:layout_toRightOf="@id/zhifubao" 
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                
+                <ImageView 
+                    android:background="@drawable/logo_xian"
+                     android:layout_width="fill_parent" 
+                     android:layout_height="wrap_content" 
+                     android:layout_marginLeft="8.0dip" 
+                     android:layout_marginRight="8.0dip" />
+                <RelativeLayout android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1.0">
+                    <CheckBox 
+                        android:id="@+id/jiesuan_weixin_select" 
+                        android:background="@drawable/default_address_selector" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:button="@null"
+                        android:layout_centerVertical="true" 
+                          />
+                    <ImageView 
+                        android:id="@+id/weixin" 
+                        android:background="@drawable/jiesuan_weixin" 
+                        android:layout_width="35.0dip" 
+                        android:layout_height="35.0dip" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:layout_toRightOf="@id/jiesuan_weixin_select" 
+                        android:layout_centerVertical="true" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:text="微信支付" 
+                        android:layout_toRightOf="@id/weixin" 
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView 
+                android:background="@drawable/logo_xian" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" />
+            <ImageView 
+                android:background="@drawable/logo_xian" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="8.0dip" />
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:background="#ffffffff" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+                <LinearLayout 
+                    android:orientation="horizontal" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip">
+                    <ImageView 
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:src="@drawable/jiesuan_5" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        
+                        android:layout_gravity="center_vertical" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="8.0dip" 
+                        android:text="费用详情" />
+                </LinearLayout>
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="8.0dip" />
+                <RelativeLayout 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content">
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_margin="15.0dip" 
+                        android:text="商品金额" 
+                        android:layout_alignParentLeft="true" 
+                        android:layout_centerVertical="true" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:textColor="#ff0000" 
+                        android:id="@+id/jiesuan_goods_price" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_margin="15.0dip" 
+                        android:text="0" 
+                        android:layout_alignParentRight="true" 
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="8.0dip" 
+                    android:layout_marginRight="8.0dip" />
+                <RelativeLayout 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content">
+                    <TextView 
+                        android:textSize="16.0sp" 
+                       
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_margin="15.0dip" 
+                        android:text="0元秒运费" 
+                        android:layout_alignParentLeft="true" 
+                        android:layout_centerVertical="true" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:textColor="#ff0000" 
+                        android:id="@+id/jiesuan_yunfei_price" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_margin="15.0dip" 
+                        android:text="0" 
+                        android:layout_alignParentRight="true" 
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginLeft="8.0dip" 
+                    android:layout_marginRight="8.0dip" />
+                <RelativeLayout 
+                    android:id="@+id/jiesuan_guan_quan" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    >
+                    <TextView 
+                        android:textSize="16.0sp" 
+                     
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                         android:layout_margin="15.0dip" 
+                         android:text="官方代金券"
+                          android:layout_alignParentLeft="true"
+                           android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" 
+                        android:textColor="#ffff0000" 
+                        android:id="@+id/jiesuan_youhuiquan" 
+                        android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                          android:layout_marginRight="10.0dip"
+                           android:text="未使用" 
+                           android:layout_toLeftOf="@+id/iv_jianTou" 
+                           android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/iv_jianTou" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                         android:layout_marginRight="15.0dip"
+                          android:src="@drawable/red_jiantou" 
+                          android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                 android:background="@drawable/logo_xian"
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout 
+        android:id="@id/rel_button" 
+        android:background="@drawable/myself_setting_bg"
+         android:layout_width="fill_parent"
+          android:layout_height="wrap_content" 
+          android:layout_alignParentBottom="true">
+        <TextView 
+            android:textSize="16.0sp" 
+            android:textColor="#ff0000" 
+            android:id="@+id/text" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="8.0dip" 
+            android:text="总金额:" 
+            android:layout_centerVertical="true" />
+        <TextView 
+            android:textSize="16.0sp"
+             android:textColor="#ff0000"
+              android:id="@+id/jiesuan_all_price" 
+              android:layout_width="wrap_content"
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="8.0dip"
+                android:text="0"
+                 android:layout_toRightOf="@id/text"
+                  android:layout_centerVertical="true" />
+        <Button 
+            android:textSize="16.0sp"
+             android:textColor="#ffffff" 
+             android:id="@+id/jiesuan_tijiao_dindan"
+              android:background="@drawable/address_delete_bg" 
+              android:layout_width="120.0dip"
+               android:layout_height="wrap_content"
+                android:layout_marginRight="8.0dip"
+                 android:text="立即支付" 
+                 android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                 />
+ 
+        
+        
+        
+        </RelativeLayout>
+</RelativeLayout>

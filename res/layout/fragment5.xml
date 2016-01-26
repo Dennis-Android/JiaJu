@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+     <RelativeLayout 
+        android:orientation="horizontal"
+         android:id="@+id/main_radio" 
+         android:layout_width="fill_parent" 
+         android:layout_height="47dp"
+         android:layout_alignParentTop="true">
+        <TextView 
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人中心" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+     </RelativeLayout>
+    
+    <!--logo线-->
+    <ImageView
+         android:id="@+id/iv_xian" 
+         android:layout_width="fill_parent"
+          android:layout_height="wrap_content" 
+          android:src="@drawable/logo_xian" 
+          android:scaleType="fitXY" 
+          android:layout_below="@id/main_radio" />
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:scrollbars="none"
+        android:layout_below="@id/iv_xian">
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:background="#ffffffff"
+             android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+            
+            
+           
+             <LinearLayout 
+                android:gravity="center" 
+                android:orientation="horizontal" 
+                android:background="@drawable/img_my_bg"
+                 android:layout_width="fill_parent" 
+                 android:layout_height="120.0dip"
+                 >
+                
+                 <!-- 登录和注册-->
+                  <LinearLayout 
+                    android:gravity="center" 
+                    android:orientation="horizontal" 
+                    android:id="@+id/ll_no_login" 
+                    android:visibility="visible"
+                     android:layout_width="fill_parent" 
+                     android:layout_height="fill_parent">
+                    <Button 
+                        android:textSize="16.0dip"
+                        android:textColor="#ffffff"
+                        android:id="@+id/bt_login" 
+                        android:background="@drawable/img_seting"
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="登录" />
+                     
+                    
+                    <ImageView
+                         android:id="@+id/button2" 
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20.0dip" 
+                         android:layout_marginRight="20.0dip" 
+                         android:src="@drawable/img_he_xian" />
+                    
+                    
+                    
+                    <Button 
+                        android:textSize="16.0dip" 
+                        android:textColor="#ffffff"
+                        android:id="@+id/bt_regist" 
+                        android:background="@drawable/img_seting"
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content"
+                        android:text="注册" />
+                </LinearLayout>
+                 
+                 
+                 
+                 
+                 
+                 
+                 <!--原本被隐藏的  -->
+                <LinearLayout 
+                    android:orientation="horizontal" 
+                    android:id="@+id/rel_top" 
+                    android:visibility="gone" 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     >
+                    
+                    
+                    
+                    
+                    
+                    <LinearLayout 
+                        android:gravity="left|center" 
+                        android:orientation="horizontal" 
+                        android:id="@+id/ll_" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="fill_parent"
+                         android:layout_weight="1.0">
+                        <RelativeLayout 
+                    android:gravity="center" 
+                    android:layout_width="wrap_content"
+                     android:layout_height="fill_parent">
+                     <!-- 头像 -->
+                     <view.CircleImageView 
+             android:id="@+id/img_touxiang" 
+             android:layout_width="60.0dip" 
+             android:layout_height="60.0dip" 
+             android:layout_marginLeft="15.0dip"
+             android:src="@drawable/ic_launcher"
+               />
+                             
+          </RelativeLayout>
+            
+            
+            <RelativeLayout 
+               android:id="@+id/my_rel" 
+               android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                >
+            
+        
+        <LinearLayout 
+     android:gravity="center_vertical" 
+     android:orientation="vertical" 
+     android:id="@+id/myself_message"
+     android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+     <LinearLayout 
+     android:gravity="center_vertical"
+      android:layout_gravity="center_horizontal" 
+      android:orientation="horizontal" 
+      android:layout_width="fill_parent" 
+      android:layout_height="wrap_content">
+    <TextView
+         android:textSize="20.0sp"
+          android:textColor="#ff1e1e1e"
+           android:ellipsize="end" 
+           android:id="@+id/myself_nickname" 
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="5.0dip"
+              android:text="用户名"
+              android:singleLine="true" />
+    </LinearLayout>
+       
+       <LinearLayout 
+           android:gravity="center_vertical" 
+           android:layout_gravity="center_horizontal" 
+           android:orientation="horizontal" 
+           android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+  <TextView
+       android:textSize="15.0sp" 
+       android:textColor="#808080" 
+       android:ellipsize="end" 
+       
+       android:id="@+id/myself_text_jifen" 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5.0dip"
+       android:text="积分"
+       android:singleLine="true" />
+  </LinearLayout>
+  
+  </LinearLayout>
+  
+   </RelativeLayout>
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+                
+               
+            
+            
+            
+            </LinearLayout>
+           
+            
+            
+            
+            <LinearLayout
+                 android:orientation="vertical" 
+                 android:layout_width="fill_parent"
+                   android:layout_height="fill_parent">
+                <LinearLayout
+                     android:orientation="horizontal" 
+                     android:background="#ffffffff" 
+                     android:layout_width="fill_parent"
+                      android:layout_height="wrap_content">
+                   
+                    
+                      <!-- 待付款 -->
+                    <RelativeLayout 
+                       android:layout_gravity="center_vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="fill_parent" 
+                       android:layout_weight="1.0">
+                        <ImageView 
+                            android:id="@+id/myself_rel_daifukuan"
+                             android:layout_width="wrap_content" 
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/myself_second_1" 
+                             android:layout_centerHorizontal="true"
+                             android:layout_centerVertical="true" 
+                             />
+                    </RelativeLayout>
+                    
+                    <!-- 待发货 -->
+                    <RelativeLayout 
+                      android:layout_gravity="center_vertical"
+                     android:layout_width="wrap_content" 
+                    android:layout_height="fill_parent" 
+                   android:layout_marginTop="8.0dip"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_weight="1.0">
+                        <ImageView 
+                            android:id="@+id/myself_rel_daifahuo" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                             android:src="@drawable/myself_second_2"
+                              android:layout_centerHorizontal="true"
+                               android:layout_centerVertical="true"
+                               />
+                    </RelativeLayout>
+                    
+                    
+                    <!-- 待收货-->
+                    <RelativeLayout 
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content" 
+                        android:layout_height="fill_parent" 
+                        android:layout_weight="1.0">
+                        <ImageView 
+                            android:id="@+id/myself_rel_daishouhuo" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/myself_second_3"
+                            android:layout_centerHorizontal="true" 
+                            android:layout_centerVertical="true" 
+                            />
+                    </RelativeLayout>
+               
+                    
+                    
+                    </LinearLayout>
+               
+               
+                
+                <!-- logo线 -->
+                <ImageView 
+                    android:background="@drawable/logo_xian" 
+                    android:layout_width="fill_parent"
+                     android:layout_height="wrap_content" 
+                     android:layout_marginRight="1.0dip" />
+                
+                
+                <LinearLayout 
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip">
+                    
+                    <!--所有订单-->
+                    <RelativeLayout 
+                        android:id="@+id/rel_myalldindan" 
+                       android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                       >
+                        <ImageView 
+                            android:id="@+id/imageView_icon" 
+                            android:layout_width="35.0dip" 
+                            android:layout_height="35.0dip" 
+                            android:layout_marginLeft="15.0dip"
+                             android:layout_marginTop="9.0dip" 
+                             android:layout_marginBottom="9.0dip" 
+                             android:src="@drawable/myself_allorder"
+                              android:layout_alignParentLeft="true" 
+                              android:layout_centerVertical="true" />
+                        <ImageView
+                             android:id="@+id/imageView_jiantou" 
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginRight="15.0dip" 
+                             android:src="@drawable/img_jiantou_xiao"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true" />
+                       
+                        <TextView
+                               android:textSize="17sp"
+                               android:id="@+id/textView_text" 
+                               android:layout_width="wrap_content" 
+                               android:layout_height="wrap_content" 
+                               android:layout_marginLeft="10.0dip" 
+                               android:text="所有订单" 
+                               android:maxEms="8" 
+                               android:layout_toRightOf="@id/imageView_icon" 
+                               android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    
+                    
+                    <!-- 线 -->
+                    <ImageView
+                         android:background="@drawable/logo_xian" 
+                         android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                           android:layout_marginRight="1.0dip" />
+                    <!--优惠券 -->
+                    <RelativeLayout 
+                        android:id="@+id/rel_myYouHuiQuan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        
+                        >
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:layout_width="35.0dip"
+                             android:layout_height="35.0dip"
+                              android:layout_marginLeft="15.0dip"
+                               android:layout_marginTop="9.0dip"
+                                android:layout_marginBottom="9.0dip"
+                                 android:src="@drawable/myself_youhuiquan"
+                                  android:layout_alignParentLeft="true"
+                                   android:layout_centerVertical="true" />
+                        <ImageView
+                            android:id="@id/imageView_jiantou"
+                              android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                                android:layout_marginRight="15.0dip"
+                                 android:src="@drawable/img_jiantou_xiao"
+                                  android:layout_alignParentRight="true"
+                                   android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp"
+                            android:id="@id/textView_text" 
+                             android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                               android:layout_marginLeft="10.0dip"
+                                android:text="现金券" 
+                                android:maxEms="8" 
+                                android:layout_toRightOf="@id/imageView_icon" 
+                                android:layout_centerVertical="true" />
+                        
+                        
+                        
+                        <!--可用现金卷 -->
+                        <TextView 
+                            android:textSize="17sp"
+                             
+                            android:id="@+id/tv_number"
+                            android:visibility="visible" 
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10.0dip" 
+                            android:text="" 
+                            android:layout_toLeftOf="@id/imageView_jiantou"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <ImageView 
+                        android:background="@drawable/logo_xian" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginRight="1.0dip" />
+                    
+                    
+                    <!--地址管理-->
+                    <RelativeLayout 
+                        android:id="@+id/rel_myShouhuoDizhi" 
+                      android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                        >
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:layout_width="35.0dip" 
+                            android:layout_height="35.0dip" 
+                            android:layout_marginLeft="15.0dip"
+                             android:layout_marginTop="9.0dip" 
+                             android:layout_marginBottom="9.0dip" 
+                             android:src="@drawable/myself_address"
+                             android:layout_alignParentLeft="true"
+                              android:layout_centerVertical="true" />
+                        <ImageView 
+                            android:id="@id/imageView_jiantou" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginRight="15.0dip" 
+                            android:src="@drawable/img_jiantou_xiao" 
+                            android:layout_alignParentRight="true" 
+                            android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp" 
+                            android:id="@id/textView_text" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="10.0dip" 
+                            android:text="地址管理" 
+                            android:maxEms="8" 
+                            android:layout_toRightOf="@id/imageView_icon" 
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    
+                     <!--线-->
+                    <ImageView 
+                        android:background="@drawable/logo_xian" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginRight="1.0dip" />
+                   
+                    
+                    
+                    <!--我的收藏-->
+                    <RelativeLayout 
+                        android:id="@+id/rel_mysave" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                        >
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:layout_width="35.0dip" 
+                            android:layout_height="35.0dip" 
+                            android:layout_marginLeft="15.0dip" 
+                            android:layout_marginTop="9.0dip" 
+                            android:layout_marginBottom="9.0dip" 
+                            android:src="@drawable/myself_save" 
+                            android:layout_alignParentLeft="true" 
+                            android:layout_centerVertical="true" />
+                        <ImageView 
+                            android:id="@id/imageView_jiantou" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginRight="15.0dip" 
+                            android:src="@drawable/img_jiantou_xiao" 
+                            android:layout_alignParentRight="true" 
+                            android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp" 
+                            android:id="@id/textView_text" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                             android:layout_marginLeft="10.0dip" 
+                             android:text="我的收藏" 
+                             android:maxEms="8" 
+                             android:layout_toRightOf="@id/imageView_icon" 
+                             android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                
+                </LinearLayout>
+                
+                
+                
+                 <!--线-->
+                  <ImageView
+                         android:background="@drawable/logo_xian"
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content"
+                           android:layout_marginRight="1.0dip" />
+                
+                <LinearLayout 
+                    android:orientation="vertical" 
+                    android:background="#ffffffff"
+                     android:layout_width="fill_parent" 
+                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip">
+                  
+                    <!-- 客服电话 -->
+                    <RelativeLayout 
+                         android:id="@+id/setting_rel_kefudianhua" 
+                        android:layout_width="fill_parent" 
+                         android:layout_height="wrap_content" 
+                          >
+                        <ImageView 
+                            android:id="@+id/imageView" 
+                            android:layout_width="35.0dip" 
+                            android:layout_height="35.0dip"
+                             android:layout_marginLeft="15.0dip" 
+                             android:layout_marginTop="9.0dip" 
+                             android:layout_marginBottom="9.0dip" 
+                             android:src="@drawable/ke_fu" 
+                             android:layout_alignParentLeft="true" 
+                             android:layout_centerVertical="true" />
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:visibility="invisible" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginLeft="15.0dip" 
+                            android:layout_marginTop="9.0dip" 
+                            android:layout_marginBottom="9.0dip" 
+                            android:src="@drawable/myself_address"
+                             android:layout_toRightOf="@id/textView_text"
+                              android:layout_centerVertical="true" />
+                        <ImageView
+                             android:id="@id/imageView_jiantou" 
+                             android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                               android:layout_marginRight="15.0dip"
+                                android:src="@drawable/img_jiantou_xiao" 
+                                android:layout_alignParentRight="true" 
+                                android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp" 
+                             
+                             android:id="@id/textView_text" 
+                             android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                               android:layout_marginLeft="12.0dip"
+                                android:text="客服电话"
+                                 android:maxEms="8"
+                                 android:layout_toRightOf="@id/imageView"
+                                  android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="16sp" 
+                            android:textColor="#ff0000"
+                            android:id="@id/textView_text"
+                              android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                                android:layout_marginRight="8.0dip" 
+                                android:text="4009696876" 
+                                android:layout_toLeftOf="@id/imageView_jiantou"
+                                 android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    
+                     <!--线-->
+                    <ImageView
+                         android:background="@drawable/logo_xian"
+                          android:layout_width="fill_parent"
+                           android:layout_height="wrap_content" 
+                           android:layout_marginRight="1.0dip" />
+                    
+                    <!-- 关于我们 -->
+                    <RelativeLayout
+                         android:id="@+id/rel_aboutus"
+   
+                           android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" 
+                            >
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:layout_width="30.0dip" 
+                            android:layout_height="30.0dip" 
+                            android:layout_marginLeft="15.0dip"
+                             android:layout_marginTop="9.0dip"
+                              android:layout_marginBottom="9.0dip"
+                              android:src="@drawable/aboutus" 
+                               android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true" />
+                        <ImageView 
+                            android:id="@id/imageView_jiantou" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                             android:layout_marginRight="15.0dip"
+                              android:src="@drawable/img_jiantou_xiao" 
+                              android:layout_alignParentRight="true"
+                               android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp" 
+                            android:id="@id/textView_text" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                             android:layout_marginLeft="10.0dip"
+                            android:text="关于我们" 
+                            android:maxEms="8"
+                             android:layout_toRightOf="@id/imageView_icon"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    
+                     
+                 <!--线-->
+                <ImageView
+                android:background="@drawable/logo_xian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip" 
+                 android:layout_marginRight="1.0dip" />
+                <LinearLayout 
+                    android:orientation="vertical"
+                     android:id="@+id/ll_seting" 
+                     android:background="#ffffffff"
+                      android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:layout_marginBottom="5.0dip" 
+                      >
+                    <RelativeLayout 
+                         android:id="@+id/rel_setting"
+                        android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content">
+                        <ImageView 
+                            android:id="@id/imageView_icon" 
+                            android:layout_width="35.0dip" 
+                            android:layout_height="35.0dip" 
+                            android:layout_marginLeft="15.0dip" 
+                            android:layout_marginTop="9.0dip" 
+                            android:layout_marginBottom="9.0dip" 
+                            android:src="@drawable/myself_setting" 
+                            android:layout_alignParentLeft="true" 
+                            android:layout_centerVertical="true" />
+                        <ImageView 
+                            android:id="@id/imageView_jiantou" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content" 
+                            android:layout_marginRight="15.0dip" 
+                            android:src="@drawable/img_jiantou_xiao" 
+                            android:layout_alignParentRight="true" 
+                            android:layout_centerVertical="true" />
+                        <TextView 
+                            android:textSize="17sp" 
+                            android:id="@id/textView_text" 
+                            android:layout_width="wrap_content" 
+                            android:layout_height="wrap_content"
+                             android:layout_marginLeft="10.0dip" 
+                             android:text="设置" android:maxEms="8" 
+                             android:layout_toRightOf="@id/imageView_icon" 
+                             android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                   
+                     <!--线-->
+                    <ImageView
+                         android:background="@drawable/logo_xian"
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content"
+                           android:layout_marginRight="1.0dip" />
+                </LinearLayout>
+           </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <ImageView 
+         android:id="@+id/detai_1_header_image"
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+          android:src="@drawable/test"                 
+         android:scaleType="fitXY"
+         />
+    
+     
+       <!--分割线 -->
+        <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            
+            />
+     
+        <!--滚动显示-->
+           <view.Myscrollview
+           android:layout_width="match_parent"
+           android:layout_height="60dp"           
+           android:layout_gravity="center"
+           >
+           <TextView
+               android:padding="10dp"
+               android:lineSpacingExtra="5dp"
+               android:id="@+id/detai_1_header_text"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"                           
+               android:gravity="center"
+               android:textSize="15sp" 
+               android:text=""/>
+  
+               
+       </view.Myscrollview>
+      
+      
+       
+       <!--分割线 -->
+        <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            
+            />
+    
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:orientation="vertical"     
+    android:layout_marginLeft="5.0dip"
+    android:layout_marginRight="5.0dip"
+    >
+            <RelativeLayout             
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+                <ImageView 
+                    android:id="@+id/detail_1_list_item_image"
+                    android:layout_width="match_parent" 
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY" 
+                     
+                    
+                    android:layout_centerHorizontal="true" />
+                <ImageView 
+                    android:id="@+id/detail_1_list_item_qiangguang"
+                     android:layout_centerInParent="true"
+                     android:layout_width="wrap_content"
+                     android:visibility="gone"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/qiangguang" 
+                     android:layout_centerHorizontal="true" />
+           </RelativeLayout>
+                    
+          <TextView 
+              android:id="@+id/detail_1_list_item_PName"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="5dp" 
+              android:layout_marginRight="5dp"
+              
+               android:maxLines="2"
+              android:textSize="13sp"
+              />
+           <RelativeLayout 
+               
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              >
+               <!--现价-->
+               <TextView 
+                  android:id="@+id/detail_1_list_item_Newprice"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content"  
+                  android:textColor="#ff0000"
+                  android:textSize="15.0sp" 
+                  android:layout_marginLeft="3.0dip"
+                        
+                />
+              
+               <!--原价-->
+               <TextView 
+                  android:id="@+id/detail_1_list_item_Oldprice"
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content"  
+                  android:textColor="#808080"
+                  android:textSize="12sp" 
+                  android:layout_marginLeft="3.0dip"
+                  android:layout_toRightOf="@+id/detail_1_list_item_Newprice"
+                         
+                  
+                  android:layout_centerVertical="true"
+                />  
+               
+               <!--划线-->
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="0.99dp"
+                   android:layout_alignLeft="@+id/detail_1_list_item_Oldprice"
+                   android:layout_alignRight="@+id/detail_1_list_item_Oldprice"
+                   android:layout_centerVertical="true"
+                   android:background="#808080"
+                    />
+              <!-- 折扣-->
+              <TextView
+                   android:id="@+id/detail_1_list_item_DiscountDes"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:background="#ff0000"
+                   
+                   android:textSize="10sp"
+                   android:layout_marginRight="5.0dip"
+                   android:textColor="#ffffff"
+                   android:padding="3dp"
+                   />
+               
+           </RelativeLayout> 
+                    
+   
+       
+</LinearLayout>

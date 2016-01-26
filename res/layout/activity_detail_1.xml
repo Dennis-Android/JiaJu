@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:orientation="vertical" >
+    
+        
+     <RelativeLayout 
+         
+         android:layout_width="match_parent"
+         android:layout_height="47dp"         
+         
+       >
+
+      <ImageButton
+          android:id="@+id/back_image"
+           
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+           android:background="@null"
+          android:src="@drawable/back" />
+     
+       <ImageButton
+          android:id="@+id/share_image"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/share" />
+       
+        <TextView 
+            android:id="@+id/activityname_text"
+            android:layout_centerInParent="true"             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:maxEms="10"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="18sp"
+            android:marqueeRepeatLimit="marquee_forever" 
+            android:focusableInTouchMode="true" 
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            />
+       
+        
+        
+        
+        
+        
+        
+      
+     </RelativeLayout>
+      
+       <!--分割线 -->
+        <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+     
+      
+      
+      <!--四个按钮-->
+      <RadioGroup          
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"                  
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:layout_gravity="center"  
+          
+        >
+       
+          
+          <RadioButton
+              android:id="@+id/radio1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:button="@null"
+              android:background="@null"            
+              android:gravity="center"             
+              android:textColor="@drawable/tab_top_color_selector"
+               android:padding="8dp"
+              android:text="默认" />
+    
+         <RadioButton 
+          android:textColor="@drawable/tab_top_color_selector"
+          android:id="@+id/radio2"
+          android:text="最新"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:button="@null"
+          android:background="@null"  
+          android:gravity="center"         
+           android:padding="8dp"
+          /> 
+          
+          
+       <RadioButton 
+          android:id="@+id/radio3"
+          android:text="热销"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:button="@null"
+          android:background="@null"  
+          android:gravity="center"              
+          android:textColor="@drawable/tab_top_color_selector"
+          android:padding="8dp"
+          />
+
+        
+           <RelativeLayout 
+           android:layout_weight="1"    
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"                
+           android:gravity="center"
+           >
+           
+           <RadioButton
+           android:textColor="@drawable/tab_top_color_selector"
+           android:id="@+id/radio4"           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"                      
+           android:background="@null"
+           android:paddingTop="4dp"
+           android:paddingBottom="4dp"
+           android:button="@null"                                                                                         
+           android:text="价格" />
+              
+            <ImageView                 
+                android:id="@+id/radio4_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/radio4"
+                android:layout_centerVertical="true"
+                android:src="@drawable/goods_1"
+                
+                />     
+           </RelativeLayout>
+          
+           
+            
+       
+      </RadioGroup>
+      
+     
+      
+      
+       <!--分割线 -->
+        <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            
+            />
+          <!--ptr为自定义属性  -->
+       
+        
+       
+        <!--com.handmark.pulltorefresh.library.PullToRefreshGridView   -->
+       <com.handmark.pulltorefresh.library.PullToRefreshGridView
+          android:gravity="center"
+          xmlns:ptr="http://schemas.android.com/apk/res-auto"         
+          android:id="@+id/detail_pull_gradview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"          
+          ptr:ptrDrawable="@drawable/arrow"
+          android:listSelector="#00000000"
+          ptr:ptrAnimationStyle="flip"                    
+          android:numColumns="2"
+          android:horizontalSpacing="4dp"
+          android:verticalSpacing="5dp"
+          />   
+    
+    
+     
+</LinearLayout>

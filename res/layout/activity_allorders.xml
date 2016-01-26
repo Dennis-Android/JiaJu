@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rel_tou" 
+        android:layout_width="fill_parent" 
+        android:layout_height="47dip">
+        <ImageView 
+            android:id="@+id/order_back" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3.0dip" 
+            android:src="@drawable/back" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            />
+        <TextView 
+            android:textSize="16.0sp" 
+            android:gravity="center_vertical" 
+            android:id="@+id/order_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="所有订单" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <ImageView 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_xian"
+        
+        />
+     
+        
+    
+    
+    
+     
+</LinearLayout>
+ 

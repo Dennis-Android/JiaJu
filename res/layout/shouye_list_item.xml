@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/shouye_list_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/test" 
+            android:scaleType="fitXY"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="10dp"
+            />
+       
+        <!-- 满两件包邮 -->
+        <TextView
+            android:id="@+id/shouye_list_item_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/shouye_list_item_image"
+            android:layout_alignLeft="@id/shouye_list_item_image"             
+            android:padding="10dp"
+            android:text="满两件包邮"
+             android:textSize="13sp"
+            android:textColor="#ff0000" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="8dp"
+        android:orientation="horizontal"
+         >
+
+        <!-- 28元起 -->
+
+        <TextView
+            android:id="@+id/shouye_list_item_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"            
+            android:text="28元起"
+            android:textColor="#ff0000" />
+
+        <!-- 中间文字 -->
+
+        <TextView
+            android:id="@+id/shouye_list_item_text3"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:maxEms="10"          
+            android:ellipsize="end"
+            android:text="大撒打算打算啊阿萨阿萨阿萨阿斯大苏打ad阿斯达斯"            
+            android:textSize="16sp" />
+
+        <!-- 剩下多少天 -->
+
+        <TextView
+            android:id="@+id/shouye_list_item_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:textColor="#808080"
+            
+            android:text="仅剩下天" />
+
+    </LinearLayout>
+
+</LinearLayout>

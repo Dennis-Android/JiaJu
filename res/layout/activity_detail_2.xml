@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+     <RelativeLayout 
+         android:id="@+id/re"
+         android:layout_width="match_parent"
+         android:layout_height="47dp"         
+         
+       >
+
+      <ImageButton
+          android:id="@+id/back_image"
+           
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+           android:background="@null"
+          android:src="@drawable/back" />
+     
+       <ImageButton
+          android:id="@+id/share_image2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/share" />
+       
+        <TextView 
+            android:id="@+id/detail_2_activityname_text"
+            android:layout_centerInParent="true"             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:maxEms="10"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="18sp"
+            android:marqueeRepeatLimit="marquee_forever" 
+            android:focusableInTouchMode="true" 
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            />
+     
+      
+     </RelativeLayout>
+     
+     <WebView                                                       
+         android:id="@+id/webview"
+         android:layout_below="@id/re"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"                                  
+         />
+    
+      
+     
+       <LinearLayout 
+          
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+          >
+       
+        <RelativeLayout 
+          android:id="@+id/toShoppingCar"
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:background="#000000"
+          >
+         
+            <ImageView 
+                    android:id="@+id/enter_shoppingcar" 
+                    android:layout_width="wrap_content"
+                     android:layout_height="fill_parent" 
+                     android:layout_marginLeft="15.0dip"
+                     android:src="@drawable/shopping_car" 
+                     android:layout_centerInParent="true"                       
+                     android:scaleX="0.9" 
+                     android:scaleY="0.9" />
+                
+                
+                <Button 
+                      android:id="@+id/shoppingcar_num"
+                      android:textSize="11.0sp"
+                      android:textColor="#ffffff"                      
+                      android:background="@drawable/goodsdetail_yuandian" 
+                      android:visibility="invisible" 
+                      android:layout_width="16dp" 
+                      android:layout_height="16dp"                       
+                      android:layout_toRightOf="@id/enter_shoppingcar" 
+                      android:layout_alignParentTop="true"
+                     />
+     
+               
+                
+        </RelativeLayout>
+       
+          
+          
+           <Button 
+             android:id="@+id/input_shopcar"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="加入购物车"
+             android:layout_toRightOf="@+id/shoppingcar_num"
+             android:background="#ff0000"
+             android:textColor="#ffffff"
+             />
+         
+          
+          
+      </LinearLayout>
+       
+      
+      
+    
+   
+</RelativeLayout>

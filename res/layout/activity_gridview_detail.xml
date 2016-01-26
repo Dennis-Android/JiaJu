@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout         
+         android:layout_width="match_parent"
+         android:layout_height="47dp"            
+       >
+
+      <ImageButton
+          android:id="@+id/back_image_1"           
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:background="@null"
+          android:src="@drawable/back" />
+     
+       <ImageButton
+          android:id="@+id/share_image_3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:background="@null"
+          android:src="@drawable/share" />
+       
+        <TextView 
+            android:id="@+id/activityname_text_1"
+            android:layout_centerInParent="true"             
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"                         
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="18sp"
+     
+            />
+  
+     </RelativeLayout>
+          
+       
+           <!--分割线 -->
+           <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />
+
+       
+       
+       
+       
+       <LinearLayout 
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           >
+         
+           <!-- 1 --> 
+          <RelativeLayout 
+             android:id="@+id/re_1"
+            android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+          
+           >
+           <RadioButton 
+                android:id="@+id/gridview_tab1"
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:button="@null"
+                 android:text="默认"
+                 android:background="@null"
+                 android:gravity="center"
+                android:textColor="@drawable/tab_top_color_selector"
+                  android:padding="10dp"
+                 />
+           
+         </RelativeLayout>  
+           
+           
+          <!-- 2 -->
+           <RelativeLayout 
+            android:id="@+id/re_2"
+            android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+          
+           >
+           <ImageView
+                 android:id="@+id/gridview_tab_image1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 
+                 android:layout_toLeftOf="@+id/gridview_tab2"
+                 android:src="@drawable/goods_1" />
+             
+             <RadioButton 
+                 android:id="@+id/gridview_tab2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_centerHorizontal="true"
+                 android:background="@null"
+                 android:button="@null"
+                 android:gravity="center"
+                 android:text="价格" 
+                 android:padding="10dp"
+                android:textColor="@drawable/tab_top_color_selector"
+                 
+                 />
+              
+           
+         </RelativeLayout>  
+          
+           
+          
+           <!-- 3 -->
+           <RelativeLayout 
+            android:id="@+id/re_3"
+           android:layout_weight="1"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+          
+           >
+
+             <RadioButton
+                 android:id="@+id/gridview_tab3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_centerHorizontal="true"
+                 android:background="@null"
+                 android:button="@null"
+                 android:gravity="center"
+                 android:textColor="@drawable/tab_top_color_selector"
+                 android:padding="10dp"
+                 
+                 android:text="折扣" />
+
+             <ImageView
+                 android:id="@+id/gridview_tab_image2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 
+                 android:layout_toLeftOf="@+id/gridview_tab3"
+                 android:src="@drawable/goods_1" />
+           
+         </RelativeLayout>  
+      
+            
+            </LinearLayout>
+             
+           <!--分割线 -->
+           <TextView 
+            android:background="#BFBFBF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            />   
+             
+       
+         <com.handmark.pulltorefresh.library.PullToRefreshListView  
+          xmlns:ptr="http://schemas.android.com/apk/res-auto"         
+          android:id="@+id/fenlei_pull_listview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"          
+          ptr:ptrDrawable="@drawable/arrow"
+          android:listSelector="#00000000"
+          ptr:ptrAnimationStyle="flip"                    
+          
+          />   
+           
+           
+
+
+
+
+
+
+</LinearLayout>

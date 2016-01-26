@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout 
+        android:background="@drawable/address_item_1" 
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+          android:layout_marginTop="10.0dip">
+        <ImageView 
+            android:id="@+id/address_list_moren"
+             android:visibility="invisible" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content"
+              android:layout_marginTop="25.0dip"
+               android:layout_marginRight="25.0dip"
+                android:src="@drawable/register_select_2"
+                 android:layout_alignParentTop="true"
+                  android:layout_alignParentRight="true" />
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:id="@+id/liner" 
+            android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+              android:layout_marginLeft="25.0dip"
+               android:layout_marginTop="25.0dip" 
+               android:layout_alignParentLeft="true" 
+               android:layout_alignParentTop="true">
+            <TextView 
+                android:textSize="18.0sp"
+                android:id="@+id/item_addresslist_name" 
+                 android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content" 
+                 android:text="默默" />
+            <TextView 
+                android:textSize="18.0sp" 
+                android:id="@+id/item_addresslist_phone"
+                 android:layout_width="wrap_content" 
+                 android:layout_height="wrap_content"
+                  android:layout_marginLeft="20.0dip" 
+                  android:text="1234567899" />
+        </LinearLayout>
+        
+       
+        
+        <TextView 
+             android:textSize="16.0sp" 
+             android:id="@+id/item_addresslist_address"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_marginTop="15.0dip" 
+              android:text="上海市徐汇区上海体育场" 
+              android:layout_below="@id/liner"
+               android:layout_alignLeft="@id/liner" />
+         
+         
+         <LinearLayout 
+            android:orientation="horizontal" 
+            android:background="@drawable/address_item_2"
+             android:layout_width="fill_parent" 
+             android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true">
+            <RelativeLayout
+                 android:layout_gravity="center_vertical"
+                  android:id="@+id/item_addresslist_rel_bianji"
+                   android:layout_width="0.0dip" 
+                   android:layout_height="wrap_content" 
+                   android:layout_weight="1.0">
+                <LinearLayout 
+                    android:orientation="horizontal" 
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true" 
+                      android:layout_centerVertical="true">
+                    <ImageView 
+                        android:layout_gravity="center_vertical"
+                         android:layout_width="wrap_content" 
+                         android:layout_height="wrap_content" 
+                         android:src="@drawable/addresslist_bianji" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:textColor="#808080"
+                         android:layout_gravity="center_vertical"
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content"
+                           android:text="编辑" />
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:layout_gravity="center_vertical"
+                 android:id="@+id/item_addresslist_rel_delete" 
+                 android:layout_width="0.0dip"
+                  android:layout_height="wrap_content"
+                   android:layout_weight="1.0">
+                <LinearLayout 
+                    android:orientation="horizontal"
+                     android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                       android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+                    <ImageView 
+                        android:layout_gravity="center_vertical"
+                         android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" 
+                          android:src="@drawable/addresslist_delete" />
+                    <TextView 
+                        android:textSize="16.0sp" 
+                        android:textColor="#808080"
+                         android:layout_gravity="center_vertical"
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:text="删除" />
+                </LinearLayout>
+            
+            </RelativeLayout>
+        
+        </LinearLayout>
+        </RelativeLayout>
+ 
+        <ImageView 
+        android:background="@drawable/logo_xian" 
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content" 
+         android:layout_alignParentBottom="true" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

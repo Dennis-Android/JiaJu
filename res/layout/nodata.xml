@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rel_tou" 
+        android:layout_width="fill_parent" 
+        android:layout_height="47dip">
+        <ImageView 
+            android:id="@+id/back" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="3.0dip" 
+            android:src="@drawable/back" 
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true" 
+            />
+        <TextView 
+            android:textSize="16.0sp" 
+            android:gravity="center_vertical" 
+            android:id="@+id/textview_title" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="" 
+            android:layout_centerHorizontal="true" 
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    
+    <ImageView 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_xian"
+        
+        />
+     
+        
+    
+    
+    
+    
+          <RelativeLayout 
+            android:id="@+id/shoppingcar_no" 
+            android:background="#ffffffff" 
+            android:visibility="visible" 
+            android:layout_width="fill_parent"
+             android:layout_height="fill_parent" 
+             android:layout_below="@id/iv_xian" 
+             android:layout_centerHorizontal="true" 
+             android:layout_centerVertical="true">
+            <LinearLayout 
+                android:orientation="vertical" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_centerHorizontal="true" 
+                android:layout_centerVertical="true">
+                <ImageView 
+                    android:layout_gravity="center_horizontal" 
+                    android:id="@+id/car_no_car" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:src="@drawable/img_order" />
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:gravity="center_horizontal" 
+                    android:layout_gravity="center_horizontal" 
+                    android:id="@+id/listnone" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="15.0dip" 
+                    android:text="你还没有相关的订单" />
+                <TextView 
+                    android:textColor="#808080" 
+                    android:gravity="center_horizontal" 
+                    android:layout_gravity="center_horizontal" 
+                    android:id="@id/listnone" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="15.0dip" 
+                    android:text="主人快给我挑点宝贝吧" />
+                <LinearLayout 
+                    android:layout_gravity="center_horizontal" 
+                    android:orientation="horizontal" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:layout_marginTop="10.0dip">
+                    <Button 
+                        android:textSize="16.0sp" 
+                        android:textColor="#ffffff"
+                         android:id="@+id/shoppingcar_login"
+                          android:background="@drawable/shopping_guangguang" 
+                          android:visibility="gone" 
+                          android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" 
+                           android:layout_marginLeft="8.0dip" 
+                           android:layout_marginRight="4.0dip" 
+                           android:text="登录" 
+                           android:layout_weight="1.0" 
+                            />
+                     
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>
